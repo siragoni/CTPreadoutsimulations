@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcku060-ffva1156-2-e" LaunchTime="1656071465">
+  <File Type="PA-TCL" Name="ctpreadout.tcl"/>
+  <File Type="REPORTS-TCL" Name="ctpreadout_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ctpreadout.vds"/>
+  <File Type="RDS-DCP" Name="ctpreadout.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/CTPv15/common_logic/RTL/Trigger_class_record/buffer_fifo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../common_logic/RTL/Trigger_class_record/buffer_fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1644347300"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CTPv15/common_logic/RTL/Interaction_record_zerosuppr/top_ir_statemachine.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../common_logic/RTL/Interaction_record_zerosuppr/top_ir_statemachine.vhd"/>
+        <Attr Name="ImportTime" Val="1644591135"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CTPv15/common_logic/RTL/Trigger_class_record/top_tc_statemachine.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../common_logic/RTL/Trigger_class_record/top_tc_statemachine.vhd"/>
+        <Attr Name="ImportTime" Val="1644591135"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CTPv15/common_logic/RTL/Interaction_record_zerosuppr/ir_statemachine.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../common_logic/RTL/Interaction_record_zerosuppr/ir_statemachine.vhd"/>
+        <Attr Name="ImportTime" Val="1651736865"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CTPv15/common_logic/RTL/Trigger_class_record/packer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../common_logic/RTL/Trigger_class_record/packer.vhd"/>
+        <Attr Name="ImportTime" Val="1644591135"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CTPv15/common_logic/RTL/Interaction_record_zerosuppr/packer_ir2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../common_logic/RTL/Interaction_record_zerosuppr/packer_ir2.vhd"/>
+        <Attr Name="ImportTime" Val="1644591135"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CTPv15/common_logic/RTL/Trigger_class_record/prsg_tcr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../common_logic/RTL/Trigger_class_record/prsg_tcr.vhd"/>
+        <Attr Name="ImportTime" Val="1644347300"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CTPv15/common_logic/RTL/Trigger_class_record/tc_statemachine.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../common_logic/RTL/Trigger_class_record/tc_statemachine.vhd"/>
+        <Attr Name="ImportTime" Val="1651736865"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CTPv15/common_logic/RTL/ctpreadout.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../common_logic/RTL/ctpreadout.vhd"/>
+        <Attr Name="ImportTime" Val="1652190330"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ctpreadout"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="tc_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="dc_fifo_gbt2olt"/>
+  <BlockFileSet Type="BlockSrcs" Name="ir_fifo"/>
+</GenRun>

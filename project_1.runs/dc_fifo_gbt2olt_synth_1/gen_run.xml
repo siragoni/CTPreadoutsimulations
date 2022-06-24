@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="dc_fifo_gbt2olt_synth_1" LaunchPart="xcku060-ffva1156-2-e" LaunchTime="1656071462">
+  <File Type="PA-TCL" Name="dc_fifo_gbt2olt.tcl"/>
+  <File Type="REPORTS-TCL" Name="dc_fifo_gbt2olt_reports.tcl"/>
+  <File Type="RDS-RDS" Name="dc_fifo_gbt2olt.vds"/>
+  <File Type="RDS-UTIL" Name="dc_fifo_gbt2olt_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="dc_fifo_gbt2olt_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="dc_fifo_gbt2olt.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dc_fifo_gbt2olt">
+    <File Path="$PSRCDIR/sources_1/ip/dc_fifo_gbt2olt/dc_fifo_gbt2olt.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ctp3-fw-ctp_logic/IP_xcku060_2e/dc_fifo_gbt2olt/dc_fifo_gbt2olt.xci"/>
+        <Attr Name="ImportTime" Val="1610033206"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/dc_fifo_gbt2olt.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ctp3-fw-ctp_logic/IP_xcku060_2e/dc_fifo_gbt2olt.xcix"/>
+        <Attr Name="ImportTime" Val="1644591001"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dc_fifo_gbt2olt"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dc_fifo_gbt2olt">
+    <File Path="$PSRCDIR/sources_1/ip/dc_fifo_gbt2olt/dc_fifo_gbt2olt.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ctp3-fw-ctp_logic/IP_xcku060_2e/dc_fifo_gbt2olt/dc_fifo_gbt2olt.xci"/>
+        <Attr Name="ImportTime" Val="1610033206"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/dc_fifo_gbt2olt.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ctp3-fw-ctp_logic/IP_xcku060_2e/dc_fifo_gbt2olt.xcix"/>
+        <Attr Name="ImportTime" Val="1644591001"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dc_fifo_gbt2olt"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

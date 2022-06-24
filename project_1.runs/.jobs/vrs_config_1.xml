@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="tc_fifo_synth_1" LaunchDir="C:/Users/Simone Ragoni/alice/CTPv15/ctp3-fw-ctpreadout-simulations/project_1.runs/tc_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dc_fifo_gbt2olt_synth_1" LaunchDir="C:/Users/Simone Ragoni/alice/CTPv15/ctp3-fw-ctpreadout-simulations/project_1.runs/dc_fifo_gbt2olt_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ir_fifo_synth_1" LaunchDir="C:/Users/Simone Ragoni/alice/CTPv15/ctp3-fw-ctpreadout-simulations/project_1.runs/ir_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/Simone Ragoni/alice/CTPv15/ctp3-fw-ctpreadout-simulations/project_1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="tc_fifo_synth_1"/>
+		<Parent Id="dc_fifo_gbt2olt_synth_1"/>
+		<Parent Id="ir_fifo_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
